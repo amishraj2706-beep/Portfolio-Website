@@ -1,0 +1,21 @@
+# Netlify Configuration
+# This file helps Netlify deploy your site correctly
+
+[build]
+  # Since this is a static site, no build command is needed
+  command = ""
+  publish = "."
+
+# Redirect all non-file requests to index.html for SPA routing (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Add security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
