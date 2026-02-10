@@ -1,5 +1,7 @@
 # My Portfolio
 
+**🌐 Live Demo:** [https://amish-cv.netlify.app/](https://amish-cv.netlify.app/)
+
 A beginner-friendly portfolio website built with HTML, CSS, and JavaScript.
 
 ## Features
